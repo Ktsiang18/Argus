@@ -1,0 +1,71 @@
+body { abackground: url(blueprint/grid.png); font-family: Georgia, serif; }
+    h2 { margin: 0 0 13px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 10px; text-transform: uppercase; }
+    h3 { margin: 0 0 .1em; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 14px; line-height: 1.3em; }
+        h3 a { color: #bc0000; text-decoration: none; }
+        h3 a:hover { text-decoration: underline; }
+    p, ul, ol { margin: 0 0 10px; }
+    p { line-height: 1.5em; }
+    ul { list-style-image: url(../_images/bullet.png); }
+        li { margin: 0 0 .3em; line-height: 1.5em; }
+    ol { margin-left: 1.35em; }
+    a { color: #000; }
+    a:hover { color: #bc0000; }
+
+    .default { color: #7f7f7f; }
+
+    /* structure */
+
+    #unfortunatebar { height: 2.3846em; background: #f2f2f2; position: absolute; top: 75px; right: 0; left: 0; z-index: -10; }
+
+    .container { margin: 0 40px; margin: 0 auto 2em; abackground: rgba(255,255,0,.1) }
+        #header { height: 61px; margin-bottom: 15px; position: relative; }
+            #logo { width: 292px; height: 61px; background: url(../_images/logo.png) bottom no-repeat; display: block; text-indent: -10000px; }
+            #header form { position: absolute; right: 0; bottom: 0; line-height: 0; }
+                #header input { float: left; }
+                #search { margin: 0 .5em 0 0; padding: .6em .5em .4em; border: solid 1px #d9d9d9; font-size: 11px; }
+                #search:focus { background: #fefeee; }
+
+        #nav, #subnav { margin-bottom: 1.3em; font-family: Helvetica, Arial, sans-serif; }
+        #nav ul, #subnav ul { height: 2.3846em; margin: 0; list-style: none; }
+        #subnav ul { float: right; }
+            #nav li, #subnav li { font-size: 108%; line-height: 2.2308em; float: left; }
+            #nav li { margin-right: 1em; }
+            #subnav li { margin-left: 1em; }
+                #nav a, #subnav a { text-decoration: none; font-weight: bold; }
+                #subnav a { font-size: 90%; }
+                .current a { color: #bc0000; }
+    
+        .section { margin: 0 0 17px; padding: 0 0 7px; background: url(../_images/horizontal.png) bottom repeat-x; }
+            #primary h3 { font-size: 16px; }
+            .inner { background: url(../_images/vertical.png) left repeat-y; padding: 0 0 0 20px; }
+            .byline { margin: 0 0 .8em; font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1em; }
+            .photo { margin-top: .8em; line-height: 1em; }
+                .photo img { border: solid 1px #ccc; display: block; }
+                .photo span { font-family: Helvetica, Arial, sans-serif; display: block; }
+                .photo_caption { margin-top: .3em; font-size: 11px; }
+                .photo_credit { margin-left: 1em; font-size: 9px; text-transform: uppercase; color: #8a8a8a; float: right; }
+            .more { font-family: Helvetica, Arial, sans-serif; font-size: 10px; color: #808080; }
+                .more a { font-weight: bold; color: #808080; }
+                .more a:hover { color: #555; }
+
+            .tabs { margin-left: -4px; }
+                .tabs h2 { height: 24px; margin-left: 4px; cursor: pointer; float: left; }
+                #mostread { width: 73px; background-image: url(../_images/mostread.png); }
+                #mostcommented { width: 110px; background-image: url(../_images/mostcommented.png); }
+                .tabs .active { background-position: 0 -24px; cursor: auto; }
+
+            #submit p { margin: 0 0 6px; }
+                #submit img { margin: -3px 0 0 -4px; display: block; }
+            
+            #wesu_button { height: 33px; margin: -3px 0 10px -4px; }
+                #wesu_button a { height: 100%; display: block; float: left; text-indent: -10000px; }
+                #wesu_button a:hover { background-position: 0 -33px; }
+                #wesu_itunes { width: 137px; background: url(../_images/wesu_itunes.png); }
+                #wesu_wimp { width: 29px; background: url(../_images/wesu_wimp.png); }
+                #wesu_rp { width: 38px; background: url(../_images/wesu_rp.png); }
+            #wesu img { display: block; float: left; }
+            #wesu .more { margin-top: -4px; }
+
+    #footer p { margin: 20px 0 0; font-size: 11px; }
+
+    .right { margin: 0 0 5px 5px; border: solid 1px #ccc; float: right; }

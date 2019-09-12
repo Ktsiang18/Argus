@@ -1,0 +1,116 @@
+/* 28 15px columns with 20px gutters */
+    
+body { font-family: Georgia, serif; }
+#header { height: 138px; margin: 0 0 39px; background: #770a00 url(../_images/header.png) right no-repeat; }
+#header div { width: 960px; height: 100%; margin: 0 auto; position: relative; }
+    #logo { position: absolute; top: 88px; left: 0; display: block; z-index: 2; }
+        #header ul { width: 615px; margin: 0; display: block; position: absolute; bottom: 22px; right: 0; text-align: right; z-index: 1; font-size: 15px; }
+            #header li { margin: 0 0 0 .75em; display: inline; list-style: none; line-height: 1; }
+            #header li a { font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #fff; text-decoration: none; display: inline; opacity: .7; }
+            #header li a:hover { opacity: .9; }
+            #header .current a, #header .current a:hover { opacity: 1; }
+
+.container { margin: 0 auto 1.5em; }
+    .section { margin: 0 0 17px; padding: 0 0 7px; background: url(../_images/horizontal.png) bottom repeat-x; }
+        .inner { background: url(../_images/vertical.png) left repeat-y; padding: 0 0 0 20px; }
+            .more { font-family: Helvetica, Arial, sans-serif; font-size: 10px; color: #808080; }
+                .more a { font-weight: bold; color: #808080; }
+                .more a:hover { color: #555; }
+
+            .photo { line-height: 1em; }
+                .photo img { border: solid 1px #ccc; display: block; }
+                .photo span { font-family: Helvetica, Arial, sans-serif; display: block; }
+                .photo_caption { margin-top: .3em; font-size: 11px; }
+                .photo_credit { margin: .3em 0 0 1em; font-size: 9px; text-transform: uppercase; color: #8a8a8a; float: right; }
+
+            .strip p { font-size: 13px; }
+            .strip a { font-size: 15px; }
+            .strip h2 a { font-size: 10px; text-decoration: none; color: #808080; float: right; }
+            .strip h2 a:hover { color: #555; }
+            .photobox div { width: 155px; height: 103px; margin: 0 0 .5em; border: solid 1px #ccc; }
+                .photobox div a { width: 100%; height: 100%; display: block; }
+            .photobox h3 { margin: 0 0 .9em; }
+                .photobox h3 a { font-size: 12px; display: block; }
+
+            #submit p { margin: 0 0 6px; }
+                #submit img { margin: -3px 0 0 -4px; display: block; }
+            
+            #wesu_button { height: 33px; margin: -3px 0 10px -4px; }
+                #wesu_button a { height: 100%; display: block; float: left; text-indent: -10000px; }
+                #wesu_button a:hover { background-position: 0 -33px; }
+                #wesu_itunes { width: 137px; background: url(../_images/wesu_itunes.png); }
+                #wesu_wimp { width: 29px; background: url(../_images/wesu_wimp.png); }
+                #wesu_rp { width: 38px; background: url(../_images/wesu_rp.png); }
+            #wesu img { display: block; float: left; }
+            #wesu .more { margin-top: -4px; }
+
+    #primary h3 { margin: 0 0 .7em; font-size: 19px; line-height: 1.15; }
+    #secondary { margin: .3em 0 0; }
+    #secondary .photo { margin: 0 0 1em 1em; float: right; }
+    #sidebar { margin: 0 0 1.5em; }
+        #sidebar p, #sidebar ul, #sidebar ol { font-size: 13px; }
+        #sidebar .more { font-size: 10px; }
+
+    #story_tools img { margin-right: 7px; position: relative; top: 3px; }
+
+    #footer { margin: 1.5em 0 0; }
+        #footer p { font-family: Georgia, serif; font-size: 11px; }
+
+    h2 { margin: 0 0 1.5em; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 10px; text-transform: uppercase; }
+    h3 { margin: 0 0 .3em; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; }
+        h3 a { text-decoration: none; }
+    p, ul, ol { margin: 0 0 .8em; font-size: 14px; }
+    h2 + ol { margin-top: -.3em; }
+    p { font-size: ; line-height: 1.5em; }
+        .photo img { border: solid 1px #ccc; display: block; }
+    ul { list-style-position: inside; list-style-image: url(../_images/bullet.png); }
+        li { margin: 0 0 .3em; line-height: 1.5em; }
+    ol { margin-left: 1.35em; }
+    a { color: #000; }
+    a:hover { color: #990d00; }
+    a:focus { outline: none; }
+
+/* single article page */
+
+#blog h2, #article h2 { margin: 0 0 .2em; font-size: 19px; text-transform: none; }
+    #blog h2 a, #article h2 a { text-decoration: none; }
+#blog .byline, #article .byline { margin: 0 0 1em; font-family: Helvetica, Arial, sans-serif; font-size: 12px; color: #424242; }
+    #blog .byline a, #article .byline a { font-weight: bold; text-decoration: none; color: #424242; }
+    #blog .byline a:hover, #article .byline a:hover { color: #990d00; }
+#blog .photo, #article .photo { margin: .4em 0 .8em 1em; float: right; }
+#blog p, #article p { font-size: 15px; line-height: 1.55; }
+
+/* category page */
+
+#category .photo { margin: .4em 0 1em 1em; float: right; }
+#category .more { font-size: 13px; }
+#category .more a { text-decoration: none; }
+
+/* tabs */
+
+#tabstabs { margin: 0 0 .7em; padding: 0; list-style: none; }
+    #tabstabs li { text-indent: -10000px; overflow: hidden; float: left; }
+    #mostpopular_tab { margin-right: .25em; }
+        #tabstabs a { height: 24px; display: block; outline: none; }
+        #tabs .ui-tabs-selected a { background-position: 0 -24px; cursor: default; }
+        #mostpopular_tab a { width: 73px; background-image: url(../_images/mostread.png) }
+        #mostcommented_tab a { width: 110px; background-image: url(../_images/mostcommented.png) }
+.ui-tabs-hide { display: none; }
+
+/* search box */
+
+#search { padding: 0 0 1em; font: 12px "Helvetica"; }
+#search #search_input { width:173px; float:left; }
+#search #search_input #s { width: 165px; margin: 0; padding:6px 4px; border:1px solid #ccc; border-right: none; float: left; font: 12px "Helvetica"; }
+#search #search_input #s:focus { outline: none; background: #eee; }
+
+#search #search_submit{float:left;width:28px;}
+#search #search_submit a {background:#eee;border:1px solid #ccc;display:block;font: 12px "Helvetica";margin:0;padding:0;text-decoration:none;width:30px;}
+
+#search #search_submit a span {background: url(http://wesleyanargus.info/wp-content/themes/argus/_images/search.png) 50% 60% no-repeat;display:block;margin:0;padding:6px 0;}
+
+#search .default { color: #999 }
+
+/* comments */
+
+#comment { width: 30em; height: 6em; padding: .5em; }

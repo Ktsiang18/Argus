@@ -1,0 +1,15 @@
+#navigation,#sidebar,#comments,#header{display: none}
+.container:before{
+	content: "The Wesleyan Argus";
+	font-size: 2em;
+	line-height: 2em;
+}
+.container{
+	margin:0 5% 0 5%;
+	width: auto;
+}
+#article{width: 100%;margin:0}
+div.span-18{
+	width: 100% !important;
+	float:none !important;
+}
