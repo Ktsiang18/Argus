@@ -223,7 +223,7 @@ $second_row = array(
               foreach( $recent_posts as $post ){
                 if($count == 0) {
                   echo '<ul class = "dropdown">';
-                  echo "<li style = 'display: none;'><img width='263' src='". abraham_get_photo($post, 263, '', '', true)  . "'></li>";
+                  echo "<li><img width='263' src='". abraham_get_photo($post, 263, '', '', true)  . "'></li>";
                 }
     						echo '<li><a href="' . get_permalink() . '" title="Look '.get_the_title().'" ><strong>' .   get_the_title().'</strong></a>' . abraham_get_author(true) . '</li> ';
                 $count++;

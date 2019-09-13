@@ -241,11 +241,12 @@ li.selected {
   color: #D1232A;
 }
 .box img {
+  display: block;
   /* max-width: 100%; */
-  max-width: 262px;
+  max-width: 100%;
   max-height:155px;
-  padding-left:15px;
-  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom:5px;
 }
 .pdf-box {
