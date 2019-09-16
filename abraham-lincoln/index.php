@@ -93,7 +93,7 @@
           </div>
           <?php } $count++; } ?>
           <div class = "col-xs-4 pull-right" style = "vertical-align: bottom;">
-          <a class="left" href="#articleCarousel" data-slide="prev" style = "color:#231F20;">
+          <a class="left" href="#articleCarousel" data-slide="prev" style = "color:#231F20; text-decoration: none;">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
           </a>
@@ -251,4 +251,3 @@ $second_row = array(
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
             <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
-
