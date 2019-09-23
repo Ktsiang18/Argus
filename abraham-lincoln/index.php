@@ -209,7 +209,9 @@ $second_row = array(
         ?>
                 <div class="col-sm-3">
                   <div class="box">
-                    <h2 style = "height: 55px; padding: 20px;">Voices</h2>
+                    <h2 style = "height: 55px; padding: 20px;">
+                      <a href="/voices">Voices</a>
+                    </h2>
                     <?php
               $args = array(
                 'numberposts' => '3',
