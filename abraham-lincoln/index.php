@@ -113,14 +113,14 @@
     <?php
     //code for collapsing section columns
 $first_row = array(
-  array("section" => "News",    "id" => 3),
-  array("section" => "Features","id" => 4),
-  array("section" => "Sports",  "id" => 5),
-  array("section" => "Arts & Culture",    "id" => 6)
+  array("section" => "News",    "id" => 3, "link" => "/section/news"),
+  array("section" => "Features","id" => 4, "link" => "/section/features"),
+  array("section" => "Sports",  "id" => 5, "link" => "/section/sports"),
+  array("section" => "Arts & Culture",    "id" => 6, "link" => "/section/arts")
 );
 $second_row = array(
-  array("section" => "Letters to the Editor","id" => 13),
-  array("section" => "Opinion", "id" => 16)
+  array("section" => "Letters to the Editor","id" => 13, "link" => "/section/wespeaks"),
+  array("section" => "Opinion", "id" => 16, "link" => "/section/opinion")
   /* array("section" => "Food",    "id" => 75) */
   //the fourth column is the PDF viewer
 );
@@ -133,8 +133,7 @@ $second_row = array(
         <div class="col-sm-3">
           <div class="box">
             <h2 style = "height: 55px; padding: 20px;" >
-
-              <a href="<?php echo esc_url(get_category_link($column[" id "])); ?>">
+              <a href="<?php echo $column["link"]; ?>">
                 <?php echo $column["section"]; ?>
               </a>
             </h2>
@@ -184,7 +183,7 @@ $second_row = array(
               <div class="col-sm-3">
                 <div class="box">
                 <h2 style = "height: 55px; padding: 20px;">
-                    <a href="<?php echo esc_url(get_category_link($column["id"])); ?>"><?php echo $column["section"]; ?></a>
+                    <a href="<?php echo $column["link"] ?>"><?php echo $column["section"]; ?></a>
                 </h2>
 
         <?php
